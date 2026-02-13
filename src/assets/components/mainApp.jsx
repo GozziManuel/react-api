@@ -16,14 +16,20 @@ export default function MainApp() {
         <h1 className="my-4">Actors List:</h1>
         <div className="row g-3">
           {actors.map((element, index) => (
-            <div className="card col-3 h-100" key={index}>
-              <img src="..." className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
+            <div key={index} className="col-4">
+              <div className="card h-100">
+                <img
+                  src={element.image}
+                  className="card-img-top "
+                  alt={element.name}
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{element.name}</h5>
+                  <p className="card-text">{element.birth_year}</p>
+                  <p className="card-text">{element.nationality}</p>
+                  <p className="card-text">{element.biography}</p>
+                  <p className="card-text">{element.awards.join(", ")}</p>
+                </div>
               </div>
             </div>
           ))}
