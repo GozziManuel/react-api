@@ -12,7 +12,7 @@ export default function ActorCard() {
   return (
     <>
       {actors.map((element, index) => (
-        <div key={index} className="col-4">
+        <div key={index} className="col-3">
           <div className="card h-100">
             <img
               src={element.image}
