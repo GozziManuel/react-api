@@ -29,6 +29,8 @@ export default function MainApp() {
                   <p className="card-text">{element.nationality}</p>
                   <p className="card-text">{element.biography}</p>
                   <p className="card-text">{element.awards.join(", ")}</p>
+                  <h4>Film Famosi</h4>
+                  <p className="card-text">{element.known_for.join("- ")}</p>
                 </div>
               </div>
             </div>
