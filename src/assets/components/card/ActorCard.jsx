@@ -12,7 +12,7 @@ export default function ActorCard() {
   return (
     <>
       {actors.map((element, index) => (
-        <div key={index} className="col-6">
+        <div key={index} className="col-4">
           <div className="card h-100">
             <img
               src={element.image}
@@ -24,8 +24,10 @@ export default function ActorCard() {
               <p className="card-text">{element.birth_year}</p>
               <p className="card-text">{element.nationality}</p>
               <p className="card-text">{element.biography}</p>
+              <p className="fw-bold my-1">Awards</p>
+
               <p className="card-text">{element.awards.join(", ")}</p>
-              <h4>Film Famosi</h4>
+              <p className="fw-bold my-1">Film Famosi</p>
               <p className="card-text">{element.known_for.join("- ")}</p>
             </div>
           </div>
