@@ -1,3 +1,9 @@
+import MainApp from "./assets/components/mainApp";
+
 export default function App() {
-  return <h1>Demo Vite & React</h1>;
+  return (
+    <>
+      <MainApp />
+    </>
+  );
 }
